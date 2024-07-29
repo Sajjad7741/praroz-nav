@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grip layout</title>
+    <style>
+        .container{
+            background-color: antiquewhite;
+            width: 400px;
+            margin: 70px 0 0 50px;
+            height: 250px;
+            display: grid;
+            /* grid-template-columns: 40% 20% 30%;
+            grid-template-rows: 30% 40%; */
+            grid-template-columns: auto auto auto;
+            gap: 5%;
+            color:#fff;
+            text-align: center;
+           
+        }
+        .items1{
+            background-color: darkblue;
+            grid-column: 1/-1;
+            grid-row: 1/2
+        }
+        .items2{
+            background-color: darkcyan;
+            grid-row: 2/5;
+    
+          
+        }
+        .items3{
+            background-color: darkgoldenrod;
+            grid-row: 2/3;
+            grid-column: 2/ span 2;
+        }
+        .items4{
+            background-color: darkgray;
+        }
+        .items5{
+            background-color: darkmagenta;
+        }
+        .items6{
+            background-color: darkorange; 
+            grid-column: 2/-1
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items items1">One</div>
+        <div class="items items2">Two</div>
+        <div class="items items3">Three</div>
+        <div class="items items4">Four</div>
+        <div class="items items5">Five</div>
+        <div class="items items6">Six</div>
+    </div>
+</body>
+</html>
